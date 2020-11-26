@@ -1,0 +1,60 @@
+p{
+    color:white;
+  }
+
+body {
+    background:url('https://s1.1zoom.me/big0/899/246913-Sepik.jpg');
+    margin:0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Ubuntu';
+  }
+  .login-form {
+    padding-top:15px;
+    padding-bottom:2%;
+    text-align:center;
+    border-radius: 200px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    margin-top:240px;
+  }
+   input[type="email"],
+   input[type="password"] {
+    color:rgb(107, 225, 255);
+    max-width:400px;
+    width: 70%;
+    line-height:3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    font-size: 15px;
+    border:0px;
+    border-bottom: 4px solid red;
+    border-radius: 10px;
+    background: linear-gradient(#141e30, #2e4866);
+    padding-left:10px;
+  }
+  input[type="email"]::placeholder {
+    color:white;
+  }
+  input[type="password"]::placeholder {
+    color:white;
+  }
+  input[type="submit"] {
+    background:#fff;
+    position: relative;
+    margin-top: 20px;
+    border:2px solid #8990ce;
+    width:50%;
+    height: 30px;
+    color:#fff;
+    background-color: #28157e;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .login-form input[type="submit"]:hover {
+    background:#1796a7;
+    color: #fff;
+    border:0px;
+    border-radius: 10px;
+        }
