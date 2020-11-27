@@ -8,6 +8,7 @@
             if(password_verify($passw,$pass[$i])==true && $mail === $user[$i])
             {
                 header('Location: https://www.educem.com');
+                $usuari = true;
                 break;
             }
         }
