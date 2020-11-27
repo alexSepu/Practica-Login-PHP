@@ -1,14 +1,13 @@
 <?php 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         require_once('arrays.php');
-        $mail =base64_decode($_POST["email"]);
+        $mail =base64_decode($_POST['email']);
         $passw =$_POST["password"];
         for($i=0;$i<count($user);$i++)
         {
-            if(password_verify($passw,$pass[$i])==true)
+            if(password_verify($passw,$pass[$i])==true && $mail === $user[$i])
             {
-                header('Location: https:\\www.educem.com');
-                $usuari = true;
+                header('Location: https://www.educem.com');
                 break;
             }
         }
